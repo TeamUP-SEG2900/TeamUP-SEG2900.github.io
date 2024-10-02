@@ -1,0 +1,54 @@
+#logo{
+    display:inline-flex;
+    flex-direction: row;
+    width: 5em;
+    height: 5em;
+    margin: 1em;
+}
+
+#Header{
+margin-left: -1em;
+margin-top: -1em;
+background-color: cornflowerblue;
+width: 100.6vw;
+height: 20%;
+}
+#title{
+    margin-top: -8em;
+text-align: center;}
+#Header h1{
+    padding-top: 0.5em;
+    font-size: 40;
+    font-family: 'Courier New', Courier, monospace;
+}
+#Header h2{
+    margin-top: -2em;
+    font-size: 15;
+    color: gray;
+}
+.dropMenu{
+    float: right;
+    position: relative;
+    left: -10em;
+}
+.dropMenu:hover .dropDownContent{
+    display: block;
+}
+.dropDownContent{
+    display: none;
+    background-color: lightblue;
+    width: 8em;
+    
+}
+.clickable{
+    margin-left: 0.5em;
+    margin-top: 1em;
+    width: 7em;
+    padding: 1em;
+    border-color: black;
+    border-width: 1em;
+    display: inline-flex;
+}
+body{
+    background-color: black;
+}

@@ -1,29 +1,336 @@
 <html>
-<<<<<<< HEAD
-=======
-    <head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* BASKETBALL */
+#basketball {
+  height: 100px;
+  width: 100px;
+  background-color: #Ee6730;
+  border-radius:100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-animation: bounce 1s linear infinite;
+  animation: bounce 1s linear infinite;
+}
+
+  
+/* BasketBall Bounce*/
+@keyframes bounce {
+
+	/* 0S*/
+  0% {top:25%; rotate(0dg) }
+  	/* 0.10S*/
+  10% {top:27% }
+  
+  	/* 0.20S*/
+  20% {top:30% }
+  
+  	/* 0.30S*/
+  30% {top 35% }
+  
+	/* 0.40S*/
+  40% {top:40%; height: 100px; width: 100px;}
+  
+	/* 0.50S*/
+  50% {top:50%;height: 10px; width: 125px;}
+  
+   /* 0.90S*/
+  100% {top:25%; height: 100px; width: 100px;}
+
+}
+
+
+/* Stripe */
+#stripe {
+  height: 100px;
+  width: 2px;
+  background-color: black;
+  border-radius:20%;
+  border-style: solid;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 54%;
+  -webkit-animation: stripebounce 1s linear infinite;
+  animation: stripebounce 1s linear infinite;
+}
+  
+/* Stripe Bounce*/
+@keyframes stripebounce {
+
+	/* 0S*/
+  0% {top:25%; rotate(0dg) }
+  	/* 0.10S*/
+  10% {top:27% }
+  
+  	/* 0.20S*/
+  20% {top:30% }
+  
+  	/* 0.30S*/
+  30% {top 35% }
+  
+	/* 0.40S*/
+  40% {top:40%; left:54%;height: 100px; width: 2px;}
+  
+	/* 0.50S*/
+  50% {top:51%;left:55%; height: 6px; width: 2px;}
+  
+   /* 0.90S*/
+  100% {top:25%;left:54%;width: 2px; }
+
+}
+/* DUST PARTICLES*/
+#dust {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #CECECE;
+  border-width: 2px;
+  display: inline-block;
+  opacity: 0;
+  top: 55%;
+  left: 65%;
+  -webkit-animation: dust_1 1s linear infinite;
+  animation: dust_1 1s linear infinite;
+}
+
+/* DUST 1 */
+@keyframes dust_1 {
+
+	/* 0.50S*/
+  50%{opacity: 0}
+  
+  	/* 0.51S*/
+  51% {opacity: 0.75}
+  
+  	/* 1S*/
+  100% {top:50%;left:35%; opacity: 0}
+
+
+}
+
+  #dust2 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #CECECE;
+  border-width: 2px;
+  display: inline-block;
+  opacity: 0;
+  top: 55%;
+  left: 55%;
+  -webkit-animation: dust_2 1s linear infinite;
+  animation: dust_2 1s linear infinite;
+}
+  /* DUST 2 */
+@keyframes dust_2 {
+
+	/* 0.50S*/
+  50%{opacity: 0}
+  
+  	/* 0.51S*/
+  51% {opacity: 0.75}
+  
+  	/* 1S*/
+  100% {top:35%;left:45%; opacity: 0}
+
+
+}
+/* SHADOW*/
+#shadow {
+  position: absolute;
+  width: 125px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #474747;
+  border-width: 2px;
+  display: inline-block;
+  opacity: 0.75;
+  top: 50%;
+  left: 49%;
+  -webkit-animation: shadow 1s linear infinite;
+  animation: shadow 1s linear infinite;
+}
+
+
+
+/* Shadow Bounce*/
+@keyframes shadow {
+
+	/* 0.1S*/
+  10% {height:15px;}
+
+  	/* 0.2S*/
+  20% {height:25px;}
+  
+	/* 0.5S*/
+  50% {height:50px; width: 145px}
+}
+
+
+
+
+  
+
+  
+
+
+
+
+-webkit-@keyframes bounce {
+	/* 0S*/
+  0% {top:50%; rotate(0dg) }
+  	/* 0.10S*/
+  10% {top:52% }
+  	/* 0.20S*/
+  20% {top:55% }
+  	/* 0.30S*/
+  30% {top 60% }
+	/* 0.40S*/
+  40% {top:65%; height: 100px; width: 100px;}
+	/* 0.50S*/
+  50% {top:75%;height: 50px; width: 125px;}
+  
+   /* 0.90S*/
+  90% {top:50% }
+
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+/* Safari support text animate */
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+
+/* initial text animate */
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+
+/* Error screen */
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+/* background */
+body{
+background-color:#EEEEEE
+}
+</style>
+
+</head>
+
+
+
+
+<body onload="myFunction()" style="margin:0">
+
+<div id="dust"> </div>
+
+<div id="shadow"> </div>
+<div id="basketball"> </div>
+<div id="stripe"> </div>
+<div id="dust2"> </div>
+
+
+
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <head>
         <link rel="stylesheet" href="style.css">
         <title>TeamUP!</title>
-    </head>
-        <div id="Header">
+   </head>
+       <div id="Header">
             <div id="logo">
                 <img src="Resources/Images/PlaceHolderLogo.ico">
             </div>
-            <div id="title">
-                <h1>TeamUP</h1>
-                <h2>Play Locale</h2>
+           <div id="title">
+               <h1>TeamUP</h1>
+               <h2>Play Locale</h2>
             </div>
             <div class="dropMenu">
-                <span>About Us!</span>
-                <div class="dropDownContent">
+               <span>About Us!</span>
+               <div class="dropDownContent">
                     <h class="clickable">Contact Hi</h>
-                    <h class="clickable">Our Mission</h>
-                </div>
-            </div>
-        </div>
-    <body>
+                   <h class="clickable">Our Mission</h>
+               </div>
+           </div>
+	</div>
+	<body>
+	</body>
 
-    </body>
-    
->>>>>>> d2c53de45a3c1ae425ab8e9d4922861d507dc97a
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+ myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("basketball").style.display = "none";
+  document.getElementById("stripe").style.display = "none";
+  document.getElementById("dust").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("dust2").style.display = "none";
+  document.getElementById("shadow").style.display = "none";
+}
+</script>
+
+</body>
+
 </html>
+
+<!--
+   * <head>
+        <link rel="stylesheet" href="style.css">
+        <title>TeamUP!</title>
+   </head>
+       <div id="Header">
+            <div id="logo">
+                <img src="Resources/Images/PlaceHolderLogo.ico">
+            </div>
+           <div id="title">
+               <h1>TeamUP</h1>
+               <h2>Play Locale</h2>
+            </div>
+            <div class="dropMenu">
+               <span>About Us!</span>
+               <div class="dropDownContent">
+                    <h class="clickable">Contact Hi</h>
+                   <h class="clickable">Our Mission</h>
+               </div>
+           </div>
+	</div>
+	<body>
+	</body>
+    */
+    //-->

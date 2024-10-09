@@ -1,15 +1,15 @@
 #logo{
     display:inline-flex;
     flex-direction: row;
-    width: 5em;
-    height: 5em;
+    width: 10em;
+    height: 10em;
     margin: 1em;
 }
 
 #Header{
 margin-left: -1em;
 margin-top: -1em;
-background-color: cornflowerblue;
+background-color: #BCD4DE;
 width: 100.6vw;
 height: 20%;
 }
@@ -24,7 +24,7 @@ text-align: center;}
 #Header h2{
     margin-top: -2em;
     font-size: 15;
-    color: gray;
+    color: #BCD4DE;
 }
 .dropMenu{
     float: right;
@@ -45,10 +45,19 @@ text-align: center;}
     margin-top: 1em;
     width: 7em;
     padding: 1em;
-    border-color: black;
+    border-color: #BCD4DE;
     border-width: 1em;
     display: inline-flex;
 }
 body{
-    background-color: black;
+    background-color: #BCD4DE;
+}
+
+#MainPhotos {
+    background-size: cover;  /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures the body takes up the full height of the viewport */
+    width: 200vw;
+    margin: 0; /* Removes any default margin from the body */
 }

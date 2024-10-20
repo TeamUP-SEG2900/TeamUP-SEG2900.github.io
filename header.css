@@ -1,0 +1,71 @@
+.enter {
+
+      /* Animation*/
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+
+    
+    /* Background*/
+    position: absolute;
+    bottom: 80%;
+    left: 0%;
+    height: 20%;
+    width: 100%;
+    background-color: #73afec;
+  }
+
+  /* Image class*/
+  .image{
+    position: absolute;
+    bottom: 10%;
+    height: 100%;
+    
+  }
+  
+   /* Title class*/
+   .title{
+
+    position: absolute;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    top: 0%;
+    left: 50%;
+  } 
+   /* logo class*/
+   .logo{
+
+    position: absolute;
+
+    top: 0%;
+    left: 40%;
+  } 
+
+  .exit {
+
+    /* Animation*/
+    position: absolute; 
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1s;
+
+    /* Background*/
+    background-color: #73afec;
+    bottom: 80%;
+    left: 0%;
+    height: 20%;
+    width: 100%;
+
+
+
+    bottom:100%;
+  }
+  .links{
+
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 150px;
+}

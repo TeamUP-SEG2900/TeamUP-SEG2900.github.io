@@ -1,41 +1,82 @@
 <!-- Description for each team member -->
-
+<!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="/header.css">
         <link rel="stylesheet" href="aboutus.css">
     </head>
-    <body>
+    <style>
+        /*"HEADER" */
+         @keyframes animatetop {
+           from{ bottom:80%; opacity:1 }
+           to{ bottom:100%; opacity:0 }
+         }
+       
+         @keyframes animatebottom {
+           from{ bottom:100%; opacity:0 }
+           to{ bottom:80%; opacity:1 }
+         }
+         /* END */
+       </style>
+
+    <body style="font-size:20px;height:1500px">
         <div class="names">
             <div class="name">
-                <img src ="jake.jpg">
+                <img src ="jake.jpg" class="img">
                 <h1>Jake</h1>
                 <p>description will go here.</p>
             </div>
             <div class="name">
-                <img src ="kenny.jpg">
+                <img src ="kenny.jpg"class="img">
                 <h1>Kenny</h1>
                 <p>description will go here.</p>
             </div>
             <div class="name">
-                <img src ="david.jpg">
+                <img src ="david.jpg"class="img">
                 <h1>David</h1>
                 <p>description will go here.</p>
             </div>
             <div class="name">
-                <img src ="josh.jpg">
+                <img src ="josh.jpg"class="img">
                 <h1>Josh</h1>
                 <p>description will go here.</p>
             </div>
             <div class="name">
-                <img src ="idika.jpg">
+                <img src ="idika.jpg"class="img">
                 <h1>Idika</h1>
                 <p>description will go here.</p>
             </div>
             <div class="name">
-                <img src ="thomas.jpg">
+                <img src ="thomas.jpg"class="img">
                 <h1>Thomas</h1>
                 <p>description will go here.</p>
             </div>
         </div>
+
+
+<!--  "HEADER" -->
+<div id="Titlebody" style="position:fixed" class = "enter"> <!-- Create  title body -->
+    <img src="/HeaderImages/logo-black.png" class="image"> <!-- Create Image logo -->
+    
+    <a href="/homepage/homepage.html"> <!-- Link for HomePage -->
+        <img src="/HeaderImages/DraftLogo.jpg" class="logo"> <!-- Click image -->
+    </a>
+    
+    <!-- Links for sub Pages Made "easy"-->
+    <div class="links">
+        <a href="/aboutus/aboutus.html" ><img src="" alt="AboutUs"></a> 
+        <a href="/Pricing/Pricing.html"><img src="" alt="Pricing"></a>
+        <a href="/DEMO/DEMO.html"><img src="" alt="DEMO"></a>
+        <a href="/FAQ/FAQ.html"><img src="" alt="FAQ"></a></a>
+        <a href="/Support/Support.html"><img src="" alt="support"></a>
+    
+    </div>
+    
+    </div>
+    <!-- END  -->
+
+
+    <script src="/Header.js"> </script>
     </body>
+
 </html>

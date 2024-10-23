@@ -1,0 +1,17 @@
+Color theme:
+  Light blues, black and white
+  Light Blue - #73afec (https://colorkit.co/color/73afec/)
+
+Header Font OPtions
+- Bebas Neue
+- Aileron
+- Simplifica
+- Flix
+- Hikou
+
+
+Paragraph Font Options
+- Magdelin
+- Neue Swiss
+- Georgia
+- Times New Roman

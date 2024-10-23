@@ -10,7 +10,10 @@ let ParkSports = document.getElementById("divParkSports")
 let divDemo = document.getElementById("divDemo")
 let downPoint;
 let downScrollPosition;
-var rect = viewer.getBoundingClientRect()
+var body = document.getElementById("body")
+body.addEventListener("pointerup", function(){
+    downPoint= undefined
+})
 img.addEventListener('pointerdown', function(e){
     downPoint = {x:e.clientX, y:e.clientY};
     downScrollPosition = {x:viewer.scrollLeft, y:viewer.scrollTop}

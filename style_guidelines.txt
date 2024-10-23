@@ -1,0 +1,6 @@
+Color theme:
+  Light blues, black and white
+  Light Blue - #73afec (https://colorkit.co/color/73afec/)
+
+Fonts:
+  

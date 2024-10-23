@@ -1,3 +1,7 @@
+******
+* USE ID IF ITS ONE OBJECT THAT NEED JS
+* USE CLASS IF ITS AFFECTING MULTIPLE OBJECTS
+******
 Color theme:
   Light blues, black and white
   Light Blue - #73afec (https://colorkit.co/color/73afec/)
@@ -15,3 +19,4 @@ Paragraph Font Options
 - Neue Swiss
 - Georgia
 - Times New Roman
+

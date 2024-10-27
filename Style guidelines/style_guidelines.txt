@@ -10,3 +10,4 @@ Title Font: Bebas Neue
 
 Paragraph Font: Times New Roman
 
+Layouts for each page found in Layouts.pdf

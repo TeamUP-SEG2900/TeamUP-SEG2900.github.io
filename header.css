@@ -71,9 +71,3 @@
     margin-top: 150px;
 }
 
-.linkshomepage{
-  display: grid;
-  text-align: center;
-  grid-template-columns: auto auto auto auto auto;
-  margin-top: -6px;
-}

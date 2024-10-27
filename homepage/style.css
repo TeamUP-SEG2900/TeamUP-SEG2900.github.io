@@ -1,11 +1,16 @@
+html, body {
+    height: 100%; /* Ensure both html and body take up full height */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
 #body {
     background-image: url('/homepage/Images/pickup-basketball-game1.jpg'); /* Update with your image path */
     background-size: cover; /* Make sure the image covers the entire area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: 100vh; /* Full viewport height */
+    background-attachment: fixed; /* Keep the background fixed */
     width: 100%; /* Full width */
-    margin: 0; /* Remove any default margin */
 }
 
 #title {
@@ -19,13 +24,13 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow effect */
     padding-left: 20px;
 
-     /* Box styling */
-     padding: 40px; /* Space inside the box */
-     margin: 5x; /* Space outside the box */
-     background-color: rgba(227, 237, 247, 0.7); /* Semi-transparent background */
-     border-radius: 5px; /* Rounded corners */
-     max-width: 450px; /* Limit the max width of the box */
-     height: 550px; /* Set height to fill the viewport */
+    /* Box styling */
+    padding: 40px; /* Space inside the box */
+    margin: 5px; /* Corrected space outside the box */
+    background-color: rgba(227, 237, 247, 0.7); /* Semi-transparent background */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 450px; /* Limit the max width of the box */
+    height: 550px; /* Set height to fill the viewport */
 }
 
 #logo {
@@ -39,7 +44,7 @@
 #header {
     margin-left: -16px;
     margin-top: -16px;
-    width: 1932px;
+    width: 100%; /* Use 100% width for responsive design */
     height: 20%;
 }
 
@@ -71,6 +76,36 @@
     cursor: pointer; /* Indicate button */
 }
 
-.clickable:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Hover effect for better visibility */
+.navbar {
+    display: flex; /* Use flexbox for the navbar */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and text */
+    background-color: #73afec; /* Change background color to black */
+    padding: 5px 20px; /* Reduced vertical padding for a smaller navbar */
+    height: 60px; /* Set a fixed height for the navbar */
 }
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for horizontal layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-size: 1.25rem; /* Increase the font size */
+    flex-grow: 1; /* Allow the ul to grow to fill space */
+    justify-content: space-around; /* Spread the links across the navbar */
+}
+
+.navbar li {
+    margin: 0; /* No extra margin needed since we're using space-around */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+

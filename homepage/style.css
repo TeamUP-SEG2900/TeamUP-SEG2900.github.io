@@ -28,9 +28,14 @@ html, body {
     padding: 40px; /* Space inside the box */
     margin: 5px; /* Corrected space outside the box */
     background-color: rgba(227, 237, 247, 0.7); /* Semi-transparent background */
-    border-radius: 5px; /* Rounded corners */
-    max-width: 450px; /* Limit the max width of the box */
-    height: 550px; /* Set height to fill the viewport */
+    top: -5px;
+    left: -5px;
+    height: 750px; /* Set height to fill the viewport */
+    position: absolute;
+    max-width: 100%; /* Limit the max width of the box */
+    position: relative;
+
+    
 }
 
 #logo {
@@ -40,9 +45,14 @@ html, body {
     height: 160px;
     margin: 16px;
 }
-
+#header2{
+    font-size:medium;
+    position: relative;
+    left: 660px;
+    top: -50px;
+}
 #header {
-    margin-left: -16px;
+    margin-left: 500px;
     margin-top: -16px;
     width: 100%; /* Use 100% width for responsive design */
     height: 20%;
@@ -109,3 +119,88 @@ html, body {
     text-decoration: underline; /* Underline on hover */
 }
 
+/* Overview section styling */
+#overview {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#overview h2 {
+    font-size: 1.8em;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+#overview p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#overview h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+  }
+  
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  /* When hovering over object*/
+  .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  /* When button is clicked*/
+  .cta:active {
+    transform: scale(0.95);
+  }

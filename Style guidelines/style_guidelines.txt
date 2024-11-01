@@ -6,8 +6,8 @@ Color theme:
   Light blues, black and white
   Light Blue - #73afec (https://colorkit.co/color/73afec/)
 
-Title Font: Bebas Neue
+Title Font (for main page): Bebas Neue
 
-Paragraph Font: Times New Roman
+Paragraph Font/header: sans-serif
 
 Layouts for each page found in Layouts.pdf

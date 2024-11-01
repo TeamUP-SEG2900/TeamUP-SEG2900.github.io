@@ -1,42 +1,39 @@
+
+
 html, body {
     height: 100%; /* Ensure both html and body take up full height */
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
 }
 
-#body {
-    background-image: url('/homepage/Images/pickup-basketball-game1.jpg'); /* Update with your image path */
-    background-size: cover; /* Make sure the image covers the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-attachment: fixed; /* Keep the background fixed */
-    width: 100%; /* Full width */
-}
+
 
 #title {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
+    font-size:75px;
     font-weight: 700; /* Bold title */
-    color: #001F3F;
+    color: #003265;
     text-transform: uppercase; /* Capitalize all letters */
     letter-spacing: 2px; /* Add spacing between letters */
     padding-bottom: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow effect */
-    padding-left: 20px;
+
 
     /* Box styling */
     padding: 40px; /* Space inside the box */
     margin: 5px; /* Corrected space outside the box */
-    background-color: rgba(227, 237, 247, 0.7); /* Semi-transparent background */
-    top: -5px;
-    left: -5px;
+    background-color: rgba(227, 237, 247, 0.5); /* Semi-transparent background */
+    top: 0px;
     height: 750px; /* Set height to fill the viewport */
-    position: absolute;
-    max-width: 100%; /* Limit the max width of the box */
-    position: relative;
+    width: 1180px;
+
+
 
     
 }
+
+
+
 
 #logo {
     display: inline-flex;
@@ -46,31 +43,46 @@ html, body {
     margin: 16px;
 }
 #header2{
-    font-size:medium;
+    font-size:large;
     position: relative;
-    left: 660px;
-    top: -50px;
+    left: 530px;
+    top: 20px;
+    width: 250px;
+    height: 50px;
+    animation: up_and_down;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: translateY(5px);
+    transition: all 0.3s ease;
 }
+
+#header2:hover{
+    color: rgb(246, 246, 246);
+    animation-play-state: paused;
+    transform: translateY(-5px);
+    
+}
+
 #header {
-    margin-left: 500px;
+    margin-left: 260px;
     margin-top: -16px;
     width: 100%; /* Use 100% width for responsive design */
     height: 20%;
-}
+    transform: translateY(5px);
+    transition: all 0.3s ease;
 
-#learn-more {
-    background-color: #73afec; /* Match the title color */
-    color: #001F3F; /* Dark color from the title */
-    padding: 15px 30px; /* Increased padding for a larger button */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1.25rem; /* Increased font size */
-    cursor: pointer; /* Change cursor to pointer on hover */
 }
+#header:hover{
+    color: aliceblue;
+    animation-play-state: paused;
+    transform: translateY(-5px);
+    }
+
 
 #title h1 {
     margin-bottom: 5px; /* Adjust this value to change spacing below the h1 */
 }
+
 
 #title h3 {
     margin-top: 0; /* Remove default margin above the h3 */
@@ -87,10 +99,11 @@ html, body {
 }
 
 .navbar {
+    font-family: "Ubuntu", sans-serif;
     display: flex; /* Use flexbox for the navbar */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space between logo and text */
-    background-color: #73afec; /* Change background color to black */
+    background-color: #003265; /* Change background color to black */
     padding: 5px 20px; /* Reduced vertical padding for a smaller navbar */
     height: 60px; /* Set a fixed height for the navbar */
 }
@@ -119,6 +132,40 @@ html, body {
     text-decoration: underline; /* Underline on hover */
 }
 
+
+
+.buttonbox{
+    position: relative;
+    left: 550px;
+    width: 1000px;
+    height: 1000px;
+    animation-name: anim_float;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.buttonbox:hover{
+    top: 5px;
+    animation-play-state: paused;
+    
+}
+#bg{
+    position: relative;
+    top: -5px;
+    background-image: url(Images/atlanta-pickup-soccer.jpg);
+    background-size: 1300px;
+}
+
+@keyframes anim_rest{
+    0% {top: 5px;}
+    100% {top: 5px;}
+}
+@keyframes anim_float {
+    0% {top: 0px;}
+    50% {top: 5px;}
+    100%{top: 0px}
+}
+
+
 /* Overview section styling */
 #overview {
     max-width: 800px;
@@ -131,20 +178,13 @@ html, body {
 
 #overview h2 {
     font-size: 1.8em;
-    color: #007acc;
+    color: #054a78;
     margin-bottom: 10px;
 }
 
-#overview p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
 
-#overview h3 {
-    font-size: 1.5em;
-    color: #333;
-    margin-top: 20px;
-}
+
+
 
 .cta {
     position: relative;
@@ -153,26 +193,19 @@ html, body {
     transition: all 0.2s ease;
     border: none;
     background: none;
+    right: 100px;
+    top: 50px;
     cursor: pointer;
+
+    stroke: #234567;
   }
   
-  .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #b1dae7;
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease;
-  }
+
   
   .cta span {
     position: relative;
     font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #234567;
@@ -180,27 +213,23 @@ html, body {
   
   .cta svg {
     position: relative;
-    top: 0;
+    top: -10px;
     margin-left: 10px;
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: #234567;
+    
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all 0.3s ease;
   }
-  
-  /* When hovering over object*/
-  .cta:hover:before {
-    width: 100%;
-    background: #b1dae7;
+  .cta:hover {
+    animation-play-state: paused;
+    transform: rotateZ(-5deg);
+    stroke: aliceblue;
+
   }
-  
-  .cta:hover svg {
-    transform: translateX(0);
-  }
-  /* When button is clicked*/
-  .cta:active {
-    transform: scale(0.95);
+  #colorchanger:hover{
+    transition: all 0.3s ease;
+    color: aliceblue;
   }

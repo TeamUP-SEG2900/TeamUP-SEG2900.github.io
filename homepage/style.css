@@ -1,104 +1,60 @@
-
-
 html, body {
     height: 100%; /* Ensure both html and body take up full height */
     margin: 0; /* Remove any default margin */
     width: 100%;
     padding: 0; /* Remove any default padding */
     scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
 }
-
-
 
 #title {
     font-family: 'Bebas Neue', sans-serif;
-    font-size:75px;
+    font-size: 6vw; /* Responsive font size based on viewport width */
     font-weight: 700; /* Bold title */
     color: #003265;
     text-transform: uppercase; /* Capitalize all letters */
     letter-spacing: 2px; /* Add spacing between letters */
-    padding-bottom: 10px;
+    padding: 2vw; /* Responsive padding */
     background-color: rgba(255, 188, 188, 0.177);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow effect */
-
-
-    /* Box styling */
-    padding: 40px; /* Space inside the box */
-    margin: 5px; /* Corrected space outside the box */
-
-    top: 0px;
-    height: 750px; /* Set height to fill the viewport */
-    width: 1180px;
-
-
-
     
+    /* Box styling */
+    margin: 0 auto; /* Center the box */
+    max-width: 90%; /* Limit width to 90% of the viewport */
+    text-align: center; /* Center text */
 }
 
-
-
-
-#logo {
-    display: inline-flex;
-    flex-direction: row;
-    width: 160px;
-    height: 160px;
-    margin: 16px;
+#header {
+    margin: 0; /* No margin needed for centering */
+    margin-bottom: 10px; /* Add margin below the title */
 }
-#header2{
-    font-size:large;
+
+#header2 {
+    font-size: large;
     position: relative;
-    left: 530px;
-    top: 10px;
-    width: 250px;
-    height: 50px;
+    left: auto; /* Reset left position */
+    top: 1vw; /* Responsive top position */
+    margin-bottom: 20px; /* Add space below Play Locale text */
     animation: up_and_down;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     transform: translateY(0px);
     transition: all 0.3s ease;
+
+    /* Enhancements for visibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add text shadow */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    padding: 0.5vw 1vw; /* Add padding for a better look */
+    border-radius: 5px; /* Optional: rounded corners */
+    display: inline-block; /* Ensure the background fits around the text */
 }
 
-#header2:hover{
-    color: rgb(255, 255, 255);
-    animation-play-state: paused;
-    transform: translateY(-5px);
-    
-}
-
-#header {
-    margin-left: 260px;
-    margin-top: -16px;
-    width: 100%; /* Use 100% width for responsive design */
-    height: 20%;
-    transform: translateY(5px);
-    transition: all 0.3s ease;
-
-}
-#header:hover{
-    color: aliceblue;
-    animation-play-state: paused;
-    transform: translateY(-5px);
-    }
-
-
-#title h1 {
-    margin-bottom: 5px; /* Adjust this value to change spacing below the h1 */
-}
-
-
-#title h3 {
-    margin-top: 0; /* Remove default margin above the h3 */
-}
-
-.clickable {
-    margin: 0; /* Adjust margins as needed */
-    padding: 1em;
-    width: 100%; /* Make clickable items full width */
-    text-align: left; /* Align text to the left */
-    background-color: transparent; /* Background color for buttons */
-    border: none; /* Remove border */
-    cursor: pointer; /* Indicate button */
+#logo {
+    display: inline-flex;
+    flex-direction: row;
+    width: auto; /* Responsive width */
+    height: auto; /* Responsive height */
+    margin: 2vw; /* Responsive margin */
 }
 
 #navbar {
@@ -106,14 +62,11 @@ html, body {
     display: flex; /* Use flexbox for the navbar */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space between logo and text */
-    background-color: rgb(0, 50, 101,0.5); /* Change background color to black */
-    padding: 5px 20px; /* Reduced vertical padding for a smaller navbar */
-    height: 60px; /* Set a fixed height for the navbar */
-    left:-50px;
-    width: 1250px;
+    background-color: rgba(0, 50, 101, 0.5); /* Change background color */
+    padding: 2vw; /* Responsive padding */
+    height: auto; /* Responsive height */
+    width: 100%; /* Full width for responsiveness */
     position: relative;
-    top: -40px;
-
 }
 
 #navbar ul {
@@ -135,120 +88,141 @@ html, body {
     color: white; /* White text color */
     font-weight: bold; /* Bold text */
 }
+
 #navbar a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-
-
-.buttonbox{
+.buttonbox {
     position: relative;
-    left: 550px;
-    width: 1000px;
-    height: 1000px;
+    margin: 0 auto; /* Center the button box */
     animation-name: anim_float;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    
+    display: block; /* Make button box block-level for proper centering */
 }
-.buttonbox:hover{
+
+.buttonbox:hover {
     top: 5px;
     animation-play-state: paused;
-    
 }
-#bg{
+
+#bg {
     position: relative;
     top: -5px;
     background-image: url(Images/atlanta-pickup-soccer.jpg);
-    background-size: 1300px;
+    background-size: cover; /* Ensure the background covers the area */
+    height: 100vh; /* Full height of the viewport */
 }
 
-@keyframes anim_rest{
-    0% {top: 5px;}
-    100% {top: 5px;}
+@keyframes anim_rest {
+    0% { top: 5px; }
+    100% { top: 5px; }
 }
+
 @keyframes anim_float {
-    0% {top: 0px;}
-    50% {top: 5px;}
-    100%{top: 0px}
+    0% { top: 0px; }
+    50% { top: 5px; }
+    100% { top: 0px; }
 }
-
 
 /* Overview section styling */
 #overview {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Maintain max-width for large screens */
+    margin: 40px auto; /* Center the overview section */
+    padding: 0; /* Remove padding to eliminate box effect */
 }
 
-#overview h2 {
-    font-size: 1.8em;
-    color: #054a78;
-    margin-bottom: 10px;
+/* Container for text and image */
+.overview-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Space out text and image */
 }
 
+/* Text section styles */
+.text-section {
+    flex: 1; /* Take up available space */
+    min-width: 300px; /* Minimum width for smaller screens */
+    padding-right: 2vw; /* Space between text and image */
+}
 
+.text-section h2 {
+    font-size: 3vw; /* Responsive font size */
+    color: #003366; /* Dark navy blue color for the heading */
+    margin-bottom: 1.5vw; /* Spacing below the heading */
+    font-weight: bold; /* Bold text */
+    text-decoration: underline; /* Underline the text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
 
+.text-section p {
+    line-height: 1.6; /* Improved readability */
+    color: #333; /* Darker text for contrast */
+    margin-bottom: 1.5vw; /* Spacing between paragraphs */
+    max-width: 90%; /* Set a max-width for paragraphs to control line length */
+}
 
+/* Bullet Points Styles */
+.text-section ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove padding */
+    margin: 20px 0; /* Add space above and below the list */
+}
 
+.text-section ul li {
+    position: relative; /* Position relative for pseudo-element */
+    padding-left: 30px; /* Increase space for custom bullet */
+    margin-bottom: 10px; /* Space between list items */
+    color: #333; /* Darker text color */
+    font-weight: 500; /* Medium font weight for bullet items */
+}
+
+.text-section ul li::before {
+    content: '➤'; /* Use a custom bullet point */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align to the left */
+    color: #007bff; /* Custom bullet color */
+    font-size: 1.2em; /* Adjust size of the bullet */
+    top: 0; /* Align with the top of the text */
+}
+
+/* Image section styles */
+.image-section {
+    flex: 1; /* Take up available space */
+    min-width: 300px; /* Minimum width for smaller screens */
+}
+
+.image-section img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for images */
+}
+
+/* Button styles */
 .cta {
-    position: relative;
-    margin: auto;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
-    right: 100px;
-    top: 0px;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255,.5);
-    border-radius: 25px;
-    stroke:#003265;
+    padding: 1.5vw 3vw; /* Button padding */
+    font-size: 1.2vw; /* Responsive font size */
+    color: white; /* Text color */
+    background-color: #007bff; /* Primary color for the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background color transition */
+}
 
+.cta:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
 
-  }
-  
-
-  
-  .cta span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: #003265;
-  }
-  
-  .cta svg {
-    position: relative;
-    top: -10px;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-  }
-  .cta:hover {
-    animation-play-state: paused;
-    transform: rotateZ(-5deg);
-    stroke: aliceblue;
-
-  }
-  #colorchanger:hover{
-    transition: all 0.3s ease;
-    color: aliceblue;
-  }
-
-  #viewmore{
-    position: relative;
-    height: 100px;
-    width: 100px;
-    top: 200px;
-    left: 100px;
-  }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #title {
+        font-size: 8vw; /* Adjust for smaller screens */
+    }
+    .text-section {
+        padding-right: 0; /* Remove right padding on small screens */
+    }
+}

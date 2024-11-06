@@ -58,13 +58,13 @@ body{
     top: 200px;
 }
 #divPark {
-    margin-top: 10em;
+    margin-top: 9em;
     margin-left: 5em;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 450px;
     padding: 20px;
     border-radius: 15px;
     background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
@@ -74,13 +74,12 @@ body{
     text-align: center;
     transition: all 0.4s ease; 
     transform: translateY(20px);
-    opacity: 0; 
+    font-size: medium;
 }
 
 
 #divPark.show {
-    display: flex;
-    opacity: 1;
+    margin-top: 10em;
     transform: translateY(0);
 }
 
@@ -224,4 +223,33 @@ body{
 
 #xButton:focus {
     outline: none;
+}
+.guideSection {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    line-height: 1.4;
+    color: #555;
+}
+.guideSection h3 {
+    font-size: 1.1em;
+    color: #2b87f0;
+    margin-bottom: 5px;
+}
+.guideSection p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+.guideSection ul {
+    margin-top: 5px;
+    padding-left: 15px;
+    list-style-type: none;
+    font-size: 0.9em;
+}
+.guideSection li {
+    margin-bottom: 6px;
+}
+.highlight {
+    font-weight: bold;
+    color: #2b87f0;
 }

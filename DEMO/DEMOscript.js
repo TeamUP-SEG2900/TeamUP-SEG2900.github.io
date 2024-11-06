@@ -72,7 +72,6 @@ lansdownePark.addEventListener("click",function(){
     ParkTitle.textContent = "Lansdowne Park";
     divshowpark.style.display = "flex";
     divshowpark.style.height = "225px";
-    divshowpark.setAttribute("style","display:flex;height:225px");
     ParkSports.innerHTML = `
     <h2 id=HBasketball class=hSport onclick=ShowTeam("Basketball",5,"Lansdowne")> Basketball </h1>  
     `;

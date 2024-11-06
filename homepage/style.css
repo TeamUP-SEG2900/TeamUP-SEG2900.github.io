@@ -1,185 +1,187 @@
-
-
 html, body {
-    height: 100%; /* Ensure both html and body take up full height */
-    margin: 0; /* Remove any default margin */
+    height: 100%;
+    margin: 0;
     width: 100%;
-    padding: 0; /* Remove any default padding */
+    padding: 0;
     scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
 }
-
-
 
 #title {
     font-family: 'Bebas Neue', sans-serif;
-    font-size:75px;
-    font-weight: 700; /* Bold title */
+    font-size: 6vw;
+    font-weight: 700;
     color: #003265;
-    text-transform: uppercase; /* Capitalize all letters */
-    letter-spacing: 2px; /* Add spacing between letters */
-    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 2vw;
     background-color: rgba(255, 188, 188, 0.177);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow effect */
-
-
-    /* Box styling */
-    padding: 40px; /* Space inside the box */
-    margin: 5px; /* Corrected space outside the box */
-
-    top: 0px;
-    height: 750px; /* Set height to fill the viewport */
-    width: 1180px;
-
-
-
-    
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
 }
 
+#header {
+    margin: 0;
+    margin-bottom: 10px;
+}
 
-
+#header2 {
+    font-size: large;
+    position: relative;
+    top: 1vw;
+    margin-bottom: 20px;
+    animation: up_and_down 4s infinite;
+    transform: translateY(0px);
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    display: inline-block;
+}
 
 #logo {
     display: inline-flex;
     flex-direction: row;
-    width: 160px;
-    height: 160px;
-    margin: 16px;
-}
-#header2{
-    font-size:large;
-    position: relative;
-    left: 530px;
-    top: 10px;
-    width: 250px;
-    height: 50px;
-    animation: up_and_down;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    transform: translateY(0px);
-    transition: all 0.3s ease;
-}
-
-#header2:hover{
-    color: rgb(255, 255, 255);
-    animation-play-state: paused;
-    transform: translateY(-5px);
-    
-}
-
-#header {
-    margin-left: 260px;
-    margin-top: -16px;
-    width: 100%; /* Use 100% width for responsive design */
-    height: 20%;
-    transform: translateY(5px);
-    transition: all 0.3s ease;
-
-}
-#header:hover{
-    color: aliceblue;
-    animation-play-state: paused;
-    transform: translateY(-5px);
-    }
-
-
-#title h1 {
-    margin-bottom: 5px; /* Adjust this value to change spacing below the h1 */
-}
-
-
-#title h3 {
-    margin-top: 0; /* Remove default margin above the h3 */
-}
-
-.clickable {
-    margin: 0; /* Adjust margins as needed */
-    padding: 1em;
-    width: 100%; /* Make clickable items full width */
-    text-align: left; /* Align text to the left */
-    background-color: transparent; /* Background color for buttons */
-    border: none; /* Remove border */
-    cursor: pointer; /* Indicate button */
+    width: auto;
+    height: auto;
+    margin: 2vw;
 }
 
 #navbar {
     font-family: "Ubuntu", sans-serif;
-    display: flex; /* Use flexbox for the navbar */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between logo and text */
-    background-color: rgb(0, 50, 101,0.5); /* Change background color to black */
-    padding: 5px 20px; /* Reduced vertical padding for a smaller navbar */
-    height: 60px; /* Set a fixed height for the navbar */
-    left:-50px;
-    width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 50, 101, 0.5);
+    padding: 2vw;
+    height: auto;
+    width: 100%;
     position: relative;
-    top: -40px;
-
 }
 
 #navbar ul {
-    list-style-type: none; /* Remove bullet points */
-    display: flex; /* Use flexbox for horizontal layout */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    font-size: 1.25rem; /* Increase the font size */
-    flex-grow: 1; /* Allow the ul to grow to fill space */
-    justify-content: space-around; /* Spread the links across the navbar */
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    flex-grow: 1;
+    justify-content: space-around;
 }
 
 #navbar li {
-    margin: 0; /* No extra margin needed since we're using space-around */
+    margin: 0;
 }
 
 #navbar a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* White text color */
-    font-weight: bold; /* Bold text */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
+
 #navbar a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
-
-
-.buttonbox{
+.buttonbox {
     position: relative;
-    left: 550px;
-    width: 1000px;
-    height: 1000px;
-    animation-name: anim_float;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    
+    margin: 0 auto;
+    animation: anim_float 5s infinite;
+    display: block;
 }
-.buttonbox:hover{
+
+.buttonbox:hover {
     top: 5px;
     animation-play-state: paused;
-    
 }
-#bg{
+
+#bg {
     position: relative;
     top: -5px;
     background-image: url(Images/atlanta-pickup-soccer.jpg);
-    background-size: 1300px;
+    background-size: cover;
+    height: 100vh;
 }
 
-@keyframes anim_rest{
-    0% {top: 5px;}
-    100% {top: 5px;}
+@keyframes anim_rest {
+    0% { top: 5px; }
+    100% { top: 5px; }
 }
+
 @keyframes anim_float {
-    0% {top: 0px;}
-    50% {top: 5px;}
-    100%{top: 0px}
+    0% { top: 0px; }
+    50% { top: 5px; }
+    100% { top: 0px; }
 }
 
-
-/* Overview section styling */
 #overview {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 0;
+}
 
+.overview-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text-section {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 2vw;
+}
+
+.text-section h2 {
+    font-size: 3vw;
+    color: #003366;
+    margin-bottom: 1.5vw;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-section p {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5vw;
+    max-width: 90%;
+}
+
+.text-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.text-section ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+.text-section ul li::before {
+    content: '➤';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 1.2em;
+    top: 0;
+}
+
+.image-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -190,61 +192,31 @@ html, body {
     margin-bottom: 10px;
 }
 
+
+
+
+
 .cta {
-    position: relative;
-    margin: auto;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
+    padding: 1.5vw 3vw;
+    font-size: 1.2vw;
+    color: white;
+    background-color: #007bff;
     border: none;
-    background: none;
-    right: 100px;
-    top: 0px;
+    border-radius: 4px;
     cursor: pointer;
-    background-color: rgb(255, 255, 255,.5);
-    border-radius: 25px;
-    stroke:#003265;
+    transition: background-color 0.3s, transform 0.2s;
+}
 
+.cta:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
 
-  }
-  
-
-  
-  .cta span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: #003265;
-  }
-  
-  .cta svg {
-    position: relative;
-    top: -10px;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-  }
-  .cta:hover {
-    animation-play-state: paused;
-    transform: rotateZ(-5deg);
-    stroke: aliceblue;
-
-  }
-  #colorchanger:hover{
-    transition: all 0.3s ease;
-    color: aliceblue;
-  }
-
-  #viewmore{
-    position: relative;
-    height: 100px;
-    width: 100px;
-    top: 200px;
-    left: 100px;
-  }
+@media (max-width: 768px) {
+    #title {
+        font-size: 8vw;
+    }
+    .text-section {
+        padding-right: 0;
+    }
+}

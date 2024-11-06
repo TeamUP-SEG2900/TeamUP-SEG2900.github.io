@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <div id="navbar">
         <ul>
             <li><a href="../aboutus/aboutus.html">About Us</a></li>
@@ -18,43 +19,46 @@
         </ul>
     </div>
 
-    <header id="title-header">
-        <h1 id="title">TeamUp Support Center</h1>
-    </header>
-    
+    <div id="bg">
+        <!-- Main Title Header -->
+        <header id="title-header">
+            <h1 id="title">TeamUp Support Center</h1>
+        </header>
+        
+        <!-- Lower Header -->
+        <p class="lower-header">We’re here to support you! Reach out for assistance or explore our resources below.</p>
+        
+        <!-- Main Content -->
+        <main>
+            <!-- Support Form Section -->
+            <section class="support-form">
+                <h2>Contact Support</h2>
+                <p>Need help? Send us an email directly from here, and our team will get back to you shortly.</p>
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-    <p>We're here to support you! Reach out for assistance or explore our resources below.</p>
-    
-    <main>
-        <!-- Support Form Section -->
-        <section class="support-form">
-            <h2>Contact Support</h2>
-            <p>Need help? Send us an email directly from here, and our team will get back to you shortly.</p>
-            <form action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                    <button type="submit" class="cta">Send Email</button>
+                </form>
+            </section>
 
-                <button type="submit">Send Email</button>
-            </form>
-        </section>
-
-        <!-- Additional Resources Section -->
-        <section class="resources">
-            <h2>Additional Support Options</h2>
-            <ul>
-                <li><a href="../FAQ/FAQ.html">Visit our FAQ</a> - Find answers to common questions.</li>
-            </ul>
-        </section>
-    </main>
-
+            <!-- Additional Resources Section -->
+            <section class="resources">
+                <h2>Additional Support Options</h2>
+                <ul>
+                    <li><a href="../FAQ/FAQ.html">Visit our FAQ</a> - Find answers to common questions.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

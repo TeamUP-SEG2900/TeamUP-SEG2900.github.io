@@ -1,48 +1,60 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="Support.css">
-    <link rel="stylesheet" href="../header.css">
-    <title>TeamUP!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamUp Support</title>
+    <link rel="stylesheet" href="support.css">
 </head>
-
-
 <body>
-<!--  "HEADER" -->
-<div id="Titlebody" style="position:fixed" class = "enter"> <!-- Create  title body -->
-    <img src="../HeaderImages/logo-black.png" class="image"> <!-- Create Image logo -->
-    
-    <a href="../homepage/homepage.html"> <!-- Link for HomePage -->
-        <img src="../HeaderImages/DraftLogo.jpg" class="logo"> <!-- Click image -->
-    </a>
-    
-    <!-- Links for sub Pages Made "easy"-->
-    <div class="links">
-        <a href="../aboutus/aboutus.html" ><img src="" alt="AboutUs"></a> 
-        <a href="../Pricing/Pricing.html"><img src="" alt="Pricing"></a>
-        <a href="../DEMO/DEMO.html"><img src="" alt="DEMO"></a>
-        <a href="../FAQ/FAQ.html"><img src="" alt="FAQ"></a></a>
-        <a href="../Support/Support.html"><img src="" alt="support"></a>
-    
-    </div>
-    
-    </div>
-    <!-- END  -->
 
-<script src="../Header.js"></script>
-    <div id="Header">
-        <div id="logo">
-            <img src="Resources/Images/PlaceHolderLogo.ico">
-        </div>
-        <div id="title">
-            <h1>TeamUP</h1>
-            <h2>Play Locale</h2>
-        </div>
-        <div class="dropMenu">
-            <span>About Us!</span>
-            <div class="dropDownContent">
-                <h class="clickable">Contact Hi</h>
-                <h class="clickable">Our Mission</h>
-            </div>
-        </div>
-</div>
+    <div id="navbar">
+        <ul>
+            <li><a href="../aboutus/aboutus.html">About Us</a></li>
+            <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+            <li><a href="../DEMO/DEMO.html">Demo</a></li>
+            <li><a href="../FAQ/FAQ.html">FAQ</a></li>
+            <li><a href="../Support/Support.html">Support</a></li>
+        </ul>
+    </div>
+
+    <header id="title-header">
+        <h1 id="title">TeamUp Support Center</h1>
+    </header>
+    
+
+    <p>We're here to support you! Reach out for assistance or explore our resources below.</p>
+    
+    <main>
+        <!-- Support Form Section -->
+        <section class="support-form">
+            <h2>Contact Support</h2>
+            <p>Need help? Send us an email directly from here, and our team will get back to you shortly.</p>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send Email</button>
+            </form>
+        </section>
+
+        <!-- Additional Resources Section -->
+        <section class="resources">
+            <h2>Additional Support Options</h2>
+            <ul>
+                <li><a href="../FAQ/FAQ.html">Visit our FAQ</a> - Find answers to common questions.</li>
+            </ul>
+        </section>
+    </main>
+
 </body>
+</html>

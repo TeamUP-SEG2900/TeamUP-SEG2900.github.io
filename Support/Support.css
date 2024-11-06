@@ -213,7 +213,7 @@ html, body {
 #bg {
     position: relative;
     top: -5px;
-    background-image: url('pickup-basketball-game1.jpg');
+    background-image: url('volleyball.jpg');
     background-size: cover; /* Ensure the image covers the entire container */
     background-position: center; /* Keep the background centered */
     background-attachment: fixed; /* This keeps the background fixed while scrolling */

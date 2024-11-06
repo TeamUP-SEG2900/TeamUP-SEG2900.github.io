@@ -5,6 +5,10 @@
     margin-left: -1em;
     margin-top: -1em;
     overflow: hidden;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
 }
 body{
     overflow: hidden;

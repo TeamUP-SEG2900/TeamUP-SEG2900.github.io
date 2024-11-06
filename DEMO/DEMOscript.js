@@ -118,7 +118,6 @@ function ShowTeam(Sport, teamSize, Park){
 let xButton = document.getElementById("xButton");
 xButton.addEventListener("click", function(){
     let TeamMenu = document.getElementById("TeamMenu");
-    alert()
     TeamMenu.style.width = "0%";
     TeamMenu.style.zIndex = 0;
 })

@@ -1,3 +1,218 @@
-body{
-    margin-top: 220px;
+/* Inheriting main styles from your previous CSS */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+}
+
+/* Centered Title Header Styling */
+#title-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: linear-gradient(to bottom, #003265, #007bff);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+#title {
+    font-family: 'Bebas Neue', sans-serif; /* Modern and bold font */
+    font-size: 6vw;
+    font-weight: 700;
+    color: #f0f8ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #title {
+        font-size: 8vw;
+        letter-spacing: 1px;
+    }
+}
+
+#navbar {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 50, 101, 0.5);
+    padding: 2vw;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+#navbar li {
+    margin: 0;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#header {
+    margin: 0;
+    text-align: center;
+    padding: 2vw 0;
+}
+
+#header2 {
+    font-size: large;
+    position: relative;
+    top: 1vw;
+    animation: up_and_down 4s infinite;
+    transform: translateY(0px);
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Support Form Styling */
+.support-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.support-form label {
+    font-size: 1.2vw;
+    color: #003265;
+    margin-top: 1rem;
+}
+
+.support-form input,
+.support-form textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.support-form input:focus, .support-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.support-form .cta {
+    padding: 1.5vw 3vw;
+    font-size: 1.2vw;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    max-width: 200px;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.support-form .cta:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Additional Resources */
+.resources {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.resources h2 {
+    font-size: 3vw;
+    color: #003366;
+    font-weight: bold;
+}
+
+.resources ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.resources li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.resources a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+/* Overview Container */
+.overview-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-section, .image-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 8vw;
+    }
+    .overview-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .support-form label, .support-form input, .support-form textarea, .support-form .cta {
+        font-size: 1rem;
+    }
+    .resources h2 {
+        font-size: 5vw;
+    }
 }

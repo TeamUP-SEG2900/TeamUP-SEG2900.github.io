@@ -186,6 +186,16 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#overview h2 {
+    font-size: 1.8em;
+    color: #054a78;
+    margin-bottom: 10px;
+}
+
+
+
+
+
 .cta {
     padding: 1.5vw 3vw;
     font-size: 1.2vw;

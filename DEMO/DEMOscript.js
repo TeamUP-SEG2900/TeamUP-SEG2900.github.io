@@ -52,7 +52,7 @@ springhurstPark.addEventListener("click",function(){
     divshowpark.setAttribute("style","display:flex;height:275px");
     ParkSports.innerHTML = `
     <h2 id=HBasketball class=hSport onclick=ShowTeam("Basketball",5,"Springhurst")> Basketball </h1> 
-    <h2 id=HVolleyball class=hSport onclick=ShowTeam("Volleyball",6,"Springhurst")> Beach Volleyball </h3>
+    <h2 id=HVolleyball class=hSport onclick=ShowTeam("Tennis",6,"Springhurst")> Tennis </h2>
     `;
     
 })

@@ -30,7 +30,6 @@ h1 {
     font-weight: 700;
     font-size: 6vw;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    margin: auto;
     width: 1000px;
     height: 195px;
     border:2px solid;
@@ -39,6 +38,9 @@ h1 {
     box-shadow: 4px 8px 8px #00000066;
     padding: 10px;
     margin-bottom: 100px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .faq-section{

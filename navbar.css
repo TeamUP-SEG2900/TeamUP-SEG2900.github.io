@@ -42,3 +42,13 @@
 .navbar a:hover {
     text-decoration: underline;
 }
+
+#Navlogo img{
+    width:4em;
+    height:4em;
+    margin-right: -5em;
+    background-image: "../HeaderImages/logo-black.png";
+    margin-top: -1.5em;
+    margin-bottom: -1.5em;
+    margin-left: -4.5em;
+}

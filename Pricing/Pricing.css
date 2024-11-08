@@ -17,43 +17,14 @@ body {
     text-align: center;
 }
 
-#navbar {
-    width: 100%;
-    background-color: #007acc;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-#navbar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-#navbar ul li {
-    margin: 0 15px;
-}
-
-#navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-    transition: color 0.3s;
-}
-
-#navbar ul li a:hover {
-    color: #e6f7ff;
+.navbar {
+    position: relative;
+    top: -90px
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
-    margin-top: 150px; /* Space between navbar and content */
     display: flex;
     flex-direction: column;
     align-items: center; /* Ensures the content is horizontally centered */

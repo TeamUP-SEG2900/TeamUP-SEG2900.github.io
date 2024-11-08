@@ -14,8 +14,8 @@ body{
     overflow: hidden;
 }
 #divDemoMain{
-    width: 480px;
-    height: 480px;
+    width: 454px;
+    height: 454px;
     top: 200px;
     border: 2px solid black;
     overflow: auto;
@@ -46,26 +46,67 @@ body{
     cursor: pointer;
 }
 #park1{
-    left: 680px;
-    top: 295px;
+    left: 100px;
+    top: 5px;
 }
 #park2{
-    left: 680px;
-    top: 100px;
+    left: 200px;
+    top: 60px;
 }
 #park3{
-    left: 300px;
-    top: 485px;
+    left: 250px;
+    top: 200px;
 }
-#divPark{
+#divPark {
+    margin-top: 9em;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    display: none;
-    float: right;
-    border-radius: 15%;
-    width:350px;
-    margin-top: 200px;
-    background-color: aquamarine;
-    margin-left: 7em;
+    width: 450px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    transition: all 0.4s ease; 
+    transform: translateY(20px);
+    font-size: medium;
+}
+
+
+#divPark.show {
+    margin-top: 10em;
+    transform: translateY(0);
+}
+
+#divPark h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #222;
+    letter-spacing: 0.5px;
+}
+
+#divPark h2 {
+    font-size: 1.1em;
+    color: #666;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#divPark .hSport:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
 }
 #divDemo{
     margin-top: -10em;
@@ -76,19 +117,8 @@ body{
     padding-bottom: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#divParkTitle{
-    width:80%;
-    margin: 10%;
-    text-align: center;
-}
 
-.hSport{
-    font-size: medium;
-    width:80%;
-    margin: 10%;
-    margin-top: -10%;
-    text-align: center;
-}
+
 #TeamMenu{
     height: 100%;
     width: 0;
@@ -111,79 +141,19 @@ body{
     margin-bottom: -1.25em;
     margin-top: 0.25em;
 }
-.divPlayers{
-    width: 14em;
-    background-color: rgb(255, 255, 255);
-    border-color: #ffffff;
-    border-style: double;
-    margin-top: 1em;
-    display: flex;
-}
-#Team1{
-    background-color:#45b6fe;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-#Team2{
-    background-color: #fe455a;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-}
-
 #PlayerMenu {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    justify-content: flex-start;
+    justify-content: flex-start;  
+    align-items: flex-start;      
     width: 100%; 
-    margin: 0;
+    height: 100vh;                
+    background-size: contain;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: local;  
+    margin-top: -5em;  
 }
-.team {
-    margin-top: -6em;
-    margin-left: 0em;
-    width: 100%; 
-    height: 100%;
-    padding: 1em;
-    flex: 1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-#lightning{
-    position: absolute; 
-    left: 40%; 
-    z-index: 5; 
-    width: 20%; 
-    height: 120%; 
-    margin-top: -10em;
-}
-#xButton{
-    position: absolute;
-    left:98%;
-    margin-top: -3.3em;
-}
-.divPlayers h1{
-    width: 80%;
-    font-size: 1em;
-}
-.divTeam2 image{
-    display: flex;
-    align-items: flex-end;
-}
-.divTeam2 h1{
-    text-align: right;
-}
-#SportName{
-    position: absolute;
-    text-align: center;
-    margin-top: -1.5em;
-    width: 100%;
-    z-index: 6;
-    font-size: 3em;
-    
-}
-
+/*
 #navbar {
     margin-top: 0.5em;
     font-family: "Ubuntu", sans-serif;
@@ -228,4 +198,59 @@ body{
 
 #navbar a:hover {
     text-decoration: underline;
+}
+*/
+#xButton {
+    left: 98%;
+    margin-left: -1.5em;
+    margin-top: 0.5em;
+    position: absolute; 
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgb(8, 8, 8); 
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#xButton:hover {
+    background-color: rgba(255, 0, 0, 1); 
+    transform: scale(1.1);
+}
+
+#xButton:focus {
+    outline: none;
+}
+.guideSection {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    line-height: 1.4;
+    color: #555;
+}
+.guideSection h3 {
+    font-size: 1.1em;
+    color: #2b87f0;
+    margin-bottom: 5px;
+}
+.guideSection p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+.guideSection ul {
+    margin-top: 5px;
+    padding-left: 15px;
+    list-style-type: none;
+    font-size: 0.9em;
+}
+.guideSection li {
+    margin-bottom: 6px;
+}
+.highlight {
+    font-weight: bold;
+    color: #2b87f0;
 }

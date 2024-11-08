@@ -1,5 +1,4 @@
-/* Inheriting main styles from your previous CSS */
-
+/* General Styling */
 html, body {
     height: 100%;
     margin: 0;
@@ -7,6 +6,8 @@ html, body {
     padding: 0;
     scroll-behavior: smooth;
     background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+    font-family: "Ubuntu", sans-serif;
+    color: #003265;
 }
 
 /* Centered Title Header Styling */
@@ -24,7 +25,7 @@ html, body {
 
 #title {
     font-family: 'Bebas Neue', sans-serif; /* Modern and bold font */
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: 700;
     color: #f0f8ff;
     text-transform: uppercase;
@@ -33,24 +34,18 @@ html, body {
     margin: 0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #title {
-        font-size: 8vw;
-        letter-spacing: 1px;
-    }
-}
-
+/* Navbar Styling */
 #navbar {
     font-family: "Ubuntu", sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 50, 101, 0.5);
-    padding: 2vw;
-    height: auto;
+    justify-content: center;
+    background-color: rgba(0, 50, 101, 0.8);
+    padding: 1rem 0;
     width: 100%;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #navbar ul {
@@ -58,9 +53,8 @@ html, body {
     display: flex;
     margin: 0;
     padding: 0;
-    font-size: 1.25rem;
-    flex-grow: 1;
-    justify-content: space-around;
+    font-size: 1.1rem;
+    gap: 2vw;
 }
 
 #navbar li {
@@ -70,76 +64,77 @@ html, body {
 #navbar a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #navbar a:hover {
-    text-decoration: underline;
-}
-
-#header {
-    margin: 0;
-    text-align: center;
-    padding: 2vw 0;
-}
-
-#header2 {
-    font-size: large;
-    position: relative;
-    top: 1vw;
-    animation: up_and_down 4s infinite;
-    transform: translateY(0px);
-    transition: all 0.3s ease;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 0.5vw 1vw;
-    border-radius: 5px;
-    display: inline-block;
+    background-color: #f0f8ff;
+    color: #003265;
 }
 
 /* Support Form Styling */
 .support-form {
-    display: flex;
-    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.support-form h2 {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .support-form label {
-    font-size: 1.2vw;
+    font-size: 1rem;
     color: #003265;
+    font-weight: 500;
     margin-top: 1rem;
+    display: block;
 }
 
 .support-form input,
 .support-form textarea {
+    width: 100%;
     padding: 0.75rem;
     font-size: 1rem;
     margin-top: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
-    max-width: 100%;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
 }
 
-.support-form input:focus, .support-form textarea:focus {
+.support-form input:focus, 
+.support-form textarea:focus {
     border-color: #007bff;
     outline: none;
 }
 
-.support-form .cta {
-    padding: 1.5vw 3vw;
-    font-size: 1.2vw;
+.support-form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
     color: white;
     background-color: #007bff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    max-width: 200px;
-    align-self: flex-start;
     margin-top: 1rem;
+    display: block;
+    width: 100%;
 }
 
-.support-form .cta:hover {
+.support-form button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
 }
@@ -151,9 +146,10 @@ html, body {
 }
 
 .resources h2 {
-    font-size: 3vw;
+    font-size: 2rem;
     color: #003366;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .resources ul {
@@ -163,56 +159,66 @@ html, body {
 }
 
 .resources li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0.5rem 0;
 }
 
 .resources a {
     color: #2563eb;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .resources a:hover {
     text-decoration: underline;
 }
 
-/* Overview Container */
-.overview-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 2vw;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.text-section, .image-section {
-    flex: 1;
-    min-width: 300px;
-}
-
-.image-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
     #title {
         font-size: 8vw;
+        letter-spacing: 1px;
     }
-    .overview-container {
-        flex-direction: column;
-        text-align: center;
+    #navbar ul {
+        gap: 1vw;
     }
-    .support-form label, .support-form input, .support-form textarea, .support-form .cta {
-        font-size: 1rem;
+    .support-form {
+        padding: 1rem;
+    }
+    .support-form h2 {
+        font-size: 1.5rem;
     }
     .resources h2 {
-        font-size: 5vw;
+        font-size: 1.5rem;
     }
 }
+
+/* Lower Header Styling */
+.lower-header {
+    font-size: 1.5rem; 
+    color: #003265;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bg {
+    position: relative;
+    top: -5px;
+    background-image: url('volleyball.jpg');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Keep the background centered */
+    background-attachment: fixed; /* This keeps the background fixed while scrolling */
+    height: 150vh; /* Full viewport height */
+    width: 100%;  /* Full width of the container */
+}
+
+

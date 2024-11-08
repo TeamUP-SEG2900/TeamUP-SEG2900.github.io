@@ -5,7 +5,6 @@ let nelsonPark = document.getElementById("park2")
 let lansdownePark = document.getElementById("park3")
 let divshowpark = document.getElementById("divPark")
 let ParkTitle = document.getElementById("divParkTitle")
-let ParkImg = document.getElementById("divParkImg")
 let ParkSports = document.getElementById("divParkSports")
 let divDemo = document.getElementById("divDemo")
 let downPoint;
@@ -23,7 +22,6 @@ let pplList = [
 "Genevieve Abraham",
 "Stephany Wootton",
 "Ronald Gatsby",
-"Current User"
 ]
 
 body.addEventListener("pointerup", function(){
@@ -49,77 +47,56 @@ img.addEventListener("pointermove", function(e){
 });
 
 springhurstPark.addEventListener("click",function(){
+    divshowpark.classList.add("show")
     ParkTitle.textContent = "Springhurst Park";
-    ParkImg.innerHTML= "";
-    divshowpark.style.display = "block";
-    divshowpark.style.height = "275px";
-    divshowpark.setAttribute("style","display:block;height:275px");
+    divshowpark.setAttribute("style","display:flex;height:275px");
     ParkSports.innerHTML = `
-    <h1 id=HBasketball class=hSport onclick=ShowTeam("Basketball",5,"Springhurst")> Basketball </h1> 
-    <h3 id=HVolleyball class=hSport onclick=ShowTeam("Volleyball",6,"Springhurst")> Beach Volleyball </h3>
+    <h2 id=HBasketball class=hSport onclick=ShowTeam("Basketball",5,"Springhurst")> Basketball </h1> 
+    <h2 id=HVolleyball class=hSport onclick=ShowTeam("Tennis",6,"Springhurst")> Tennis </h2>
     `;
     
 })
-nelsonPark.addEventListener("click",function(){  
+nelsonPark.addEventListener("click",function(){
+    divshowpark.classList.add("show")  
     ParkTitle.textContent = "Nelson Park";
-    ParkImg.innerHTML= "";
-    divshowpark.style.display = "block";
+    divshowpark.style.display = "flex";
     divshowpark.style.height = "250px";
-    divshowpark.setAttribute("style","display:block;height:250px");
+    divshowpark.setAttribute("style","display:flex;height:250px");
     ParkSports.innerHTML = `
-    <h1 id=HODRHockey class=hSport onclick=ShowTeam("Hockey",6,"Nelson")> Outdoor Hockey </h1> 
+    <h2 id=HODRHockey class=hSport onclick=ShowTeam("Hockey",6,"Nelson")> Outdoor Hockey </h1> 
     <h2 id=HTennis class=hSport onclick=ShowTeam("Tennis",2,"Nelson")> Tennis </h2> 
     `;
 })
 lansdownePark.addEventListener("click",function(){  
+    divshowpark.classList.add("show")
     ParkTitle.textContent = "Lansdowne Park";
-    ParkImg.innerHTML= "";
-    divshowpark.style.display = "block";
+    divshowpark.style.display = "flex";
     divshowpark.style.height = "225px";
-    divshowpark.setAttribute("style","display:block;height:225px");
     ParkSports.innerHTML = `
-    <h1 id=HBasketball class=hSport onclick=ShowTeam("Basketball",5,"Lansdowne")> Basketball </h1>  
+    <h2 id=HBasketball class=hSport onclick=ShowTeam("Basketball",5,"Lansdowne")> Basketball </h1>  
     `;
 })
 function ShowTeam(Sport, teamSize, Park){
  let TeamMenu = document.getElementById("TeamMenu");
- let Team1 = document.getElementById("Team1");
- let Team2 = document.getElementById("Team2");
- let SportName = document.getElementById("SportName")
- let l = pplList.slice();
+ let PlayerMenu = document.getElementById("PlayerMenu")
  document.body.style.overflow = 'hidden';
  TeamMenu.style.width = "100%";
  TeamMenu.style.zIndex = 3;
- Team1.innerHTML = "";
- Team2.innerHTML = "";
- SportName.textContent = Sport;
- for(let i=0; i<teamSize; i++){
-   
-    var randomIndex = Math.floor(Math.random() * l.length);
-    var randomElement = l[randomIndex];
-    Team1.innerHTML += `
-    <div id="T1${i}" class="divPlayers divTeam1">
-    <img class="playerIMG" src="IMG/Default_pfp.svg.png">
-    <h1  class="HPlayer">${randomElement}</h1>
-    </div>
-    `;
-    l.splice(randomIndex, 1);
-    randomIndex = Math.floor(Math.random() * l.length);
-    randomElement = l[randomIndex];
-    Team2.innerHTML += `
-    <div id="T2${i}" class="divPlayers divTeam2">
-    <h1  class="HPlayer">${randomElement}</h1>
-    <img class="playerIMG" src="IMG/Default_pfp.svg.png">
-    </div>
-    `;
-    l.splice(randomIndex, 1);
+ if (Sport=="Basketball")
+ {
+    PlayerMenu.style.backgroundImage = "url(IMG/Basketball-Page.jpg)";
  }
-}
+ if (Sport=="Tennis"){
+    PlayerMenu.style.backgroundImage = "url(IMG/Tennis-Page.jpg)"
+ }
+ }
+
 let xButton = document.getElementById("xButton");
-xButton.addEventListener("click", function(){
+xButton.addEventListener("click", function() {
     let TeamMenu = document.getElementById("TeamMenu");
     TeamMenu.style.width = "0%";
-    TeamMenu.style.zIndex = 0;
-})
+    TeamMenu.style.zIndex = "0";
+    TeamMenu.style.transition = "0.5s";
+});
 
 

@@ -17,6 +17,7 @@
     margin: 0 auto;
     max-width: 90%;
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 .navbar ul {

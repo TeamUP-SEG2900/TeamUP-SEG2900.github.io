@@ -99,7 +99,6 @@ button#subscribe-btn {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
 }
 
 button#subscribe-btn:hover {

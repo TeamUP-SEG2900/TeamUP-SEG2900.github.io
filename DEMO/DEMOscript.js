@@ -89,6 +89,9 @@ function ShowTeam(Sport, teamSize, Park){
  if (Sport=="Tennis"){
     PlayerMenu.style.backgroundImage = "url(IMG/Tennis-Page.jpg)"
  }
+ if (Sport=="Hockey"){
+    PlayerMenu.style.backgroundImage = "url(IMG/Hockey-Image.jpg)"
+ }
  }
 
 let xButton = document.getElementById("xButton");

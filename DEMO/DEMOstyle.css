@@ -10,6 +10,7 @@
     background-position: center; 
     background-attachment: fixed;
 }
+
 .navbar {
     position: relative;
     top: 20px;
@@ -39,13 +40,26 @@ body{
     z-index: auto;
 }
 .parkLocation{
-    background-color: red;
+    
+
     border-radius: 25%;
     width: 20px;
     height: 20px;
-    border: 0.5px solid black;
     position: relative;
+    color: red;
+    
+
 }
+#arrow{
+    transform: rotateZ(90deg);
+    position: relative;
+    font-weight:bolder;
+    left: 0vw;
+    top:-3.25vh;
+
+}
+
+
 .parkLocation:hover{
     cursor: pointer;
 }
@@ -71,9 +85,9 @@ body{
     width: 450px;
     padding: 20px;
     border-radius: 15px;
-    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    background: white;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
-    color: #333;
+    color: #003265;
     font-family: 'Arial', sans-serif;
     text-align: center;
     transition: all 0.4s ease; 
@@ -91,7 +105,7 @@ body{
     font-size: 1.6em;
     font-weight: 700;
     margin: 0 0 10px 0;
-    color: #222;
+    color: #003265;
     letter-spacing: 0.5px;
 }
 
@@ -237,7 +251,7 @@ body{
 }
 .guideSection h3 {
     font-size: 1.1em;
-    color: #2b87f0;
+    color: #003265;
     margin-bottom: 5px;
 }
 .guideSection p {

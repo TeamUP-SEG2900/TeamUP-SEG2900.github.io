@@ -22,7 +22,7 @@ html, body {
     margin-bottom: 20px;
 }
 #gradient{
-    background: #007bff;
+    background: #003265;
 }
 
 .navbar {
@@ -53,7 +53,7 @@ html, body {
 
 .support-form h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #003265;
     font-weight: bold;
     margin-bottom: 1rem;
     text-align: center;

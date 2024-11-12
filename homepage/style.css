@@ -26,7 +26,19 @@ html, body {
     margin: 0;
     margin-bottom: 10px;
 }
-
+#header{
+    animation-name: flip_out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    
+}
+#header:hover{
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
 #header2 {
     font-size: large;
     position: relative;
@@ -36,7 +48,39 @@ html, body {
     padding: 0.5vw 1vw;
     border-radius: 5px;
     display: inline-block;
+    animation-name: flip_out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+
 }
+#header2:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+
+}
+@keyframes shake {
+    0% {transform: rotateZ(1deg); }
+    
+    20%{transform: rotateZ(-1deg);}
+    40%{transform: rotateZ(1deg);}
+    60%{transform: rotateZ(-1deg);}
+    80%{transform: rotateZ(1deg);}
+    100%{transform: rotateZ(0deg);}
+}
+@keyframes flip_out {
+    0% {transform: rotateZ(1deg); }
+    
+    2%{transform: rotateZ(-1deg);}
+    4%{transform: rotateZ(1deg);}
+    6%{transform: rotateZ(-1deg);}
+    8%{transform: rotateZ(1deg);}
+    10%{transform: rotateZ(0deg);}
+
+    100%{transform: rotateZ(0deg);}
+}
+
 
 #logo {
     display: inline-flex;
@@ -48,10 +92,17 @@ html, body {
     position: relative;
     margin: auto;
     display: block;
+    animation-name: anim_float;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
-.buttonbox:hover {
-    top: 5px;
+
+.buttonbox:hover{
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+
 }
 
 #bg {
@@ -63,8 +114,9 @@ html, body {
 }
 
 @keyframes anim_float {
-    0%, 100% { top: 0px; }
-    50% { top: 5px; }
+    0% { top: 0vh; }
+    50% { top: 0.1vh; }
+    100%{top:0vh}
 }
 
 #overview {
@@ -116,7 +168,7 @@ html, body {
     content: '•'; /* Simplified bullet icon */
     position: absolute;
     left: 0;
-    color: #007bff;
+    color: #003265;
     font-size: 1em;
 }
 
@@ -135,7 +187,7 @@ html, body {
     padding: 1vw 2vw;
     font-size: 1.2vw;
     color: white;
-    background-color: #007bff;
+    background-color: #003265;
     border: none;
     border-radius: 4px;
     cursor: pointer;

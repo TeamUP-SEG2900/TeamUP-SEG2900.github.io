@@ -5,11 +5,12 @@ body {
     background-image: url(faq.jpg);
     background-size: cover;
     background-attachment: fixed;
+    color: white;
 }
 
 details {
     border-radius: 10px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgb(0, 50, 101, 0.5);;
     backdrop-filter: blur(10px);
     box-shadow: 4px 8px 8px #00000066;
     padding: 10px;
@@ -27,14 +28,14 @@ details[open] summary {
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     text-align : center;
-    color: #003265;
+    
     font-weight: 700;
     font-size: 90;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     width: 1000px;
     height: 195px;
     border-radius: 10px;
-    background-color: rgba(255,255,255,0.65);
+    background-color: rgb(0, 50, 101, 0.6);
     backdrop-filter: blur(10px);
     box-shadow: 4px 8px 8px #00000066;
     padding: 10px;

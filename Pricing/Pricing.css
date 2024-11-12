@@ -15,6 +15,8 @@ body {
     height: 100%;
     padding-top: 100px; /* Adjusted space for top elements */
     text-align: center;
+    
+    background-image: url(Rock.png);
 }
 
 .navbar {
@@ -35,7 +37,7 @@ body {
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #007acc;
+    color: #003265;
 }
 
 .description {
@@ -67,7 +69,7 @@ h1 {
 .pricing-box h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #007acc;
+    color: #003265;
 }
 
 .price {
@@ -92,7 +94,7 @@ ul li {
 }
 
 button#subscribe-btn {
-    background-color: #007acc;
+    background-color: #003265;
     color: white;
     font-size: 1.1em;
     padding: 10px 20px;
@@ -102,7 +104,7 @@ button#subscribe-btn {
 }
 
 button#subscribe-btn:hover {
-    background-color: #005fa3;
+    background-color: #003265;
 }
 
 .why-upgrade {
@@ -118,7 +120,7 @@ button#subscribe-btn:hover {
 .why-upgrade h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #007acc;
+    color: #003265;
 }
 
 .why-upgrade table {
@@ -133,7 +135,7 @@ button#subscribe-btn:hover {
 }
 
 .why-upgrade th {
-    background-color: #007acc;
+    background-color: #003265;
     color: white;
 }
 
@@ -146,7 +148,7 @@ button#subscribe-btn:hover {
 .testimonials h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #007acc;
+    color: #003265;
 }
 
 .testimonial {
@@ -166,7 +168,7 @@ button#subscribe-btn:hover {
 .cta-bottom {
     text-align: center;
     padding: 20px;
-    background-color: #007acc;
+    background-color: #003265;
     color: white;
     border-radius: 8px;
     margin-bottom: 50px;
@@ -178,7 +180,7 @@ button#subscribe-btn:hover {
 
 #subscribe-btn-bottom {
     background-color: white;
-    color: #007acc;
+    color: #003265;
     font-size: 1.1em;
     padding: 10px 20px;
     border: none;

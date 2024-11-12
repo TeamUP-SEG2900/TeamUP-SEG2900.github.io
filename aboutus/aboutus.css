@@ -3,6 +3,29 @@ body {
     background-image: url(aboutus.jpg);
     background-size: cover;
     background-attachment: fixed;
+    color: white;
+}
+/* Centered Title Header Styling */
+#title-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+#title {
+    font-family: 'Bebas Neue', sans-serif; /* Modern and bold font */
+    font-size: 5vw;
+    font-weight: 700;
+    color: #f0f8ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 0;
 }
 
 .names{
@@ -15,7 +38,7 @@ body {
 }
 .name{
     margin-top: 80px;
-    background-color: rgba(255,255,255,0.5);
+    background-color:  rgb(0, 50, 101, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 4px 8px 8px #00000066;
